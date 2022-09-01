@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,300;1,600&family=Roboto+Mono:ital,wght@0,100;0,300;1,300&family=Roboto:wght@100;300&display=swap');
+.font, .glass {
+    font-family: "Fira Code";
+}
+.title, .navbar, .parent {
+    font-family: "Roboto Mono";
+}
+.over h3 {
+    line-clamp: 8;
+}
+@media screen and(min-width: 700px){
+    .over h3 {
+        line-clamp: none;
+    }
+}
+.notify {
+    z-index: 999;
+}
+.pop, .search, .title, .absolute {
+    font-family: "Poppins";
+}
+.sm, .container {
+    font-family: "Roboto Mono";
+}
+.butts{
+    transition: all 0.4s ease;
+    
+}
+.clamp {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.butts::before {
+    content: "";
+    position: absolute;
+    width: 0rem;
+    height: 2.6rem;
+    background-color: gray;
+    transition: all 0.4s ease;
+    top: 0rem;
+    left: 0rem;
+}
+
+.butts:hover::before {
+    width: 8.3rem;
+
+}
+.hell {
+    z-index: 999
+}
+.love {
+    z-index: 999;
+    background: rgb(25, 22, 22);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );  
+}
+
+.glass, .nav, .btn button {
+    background: rgba(151, 149, 149, 0.15);
+    
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+   
+}
+/*
+    for account info
+*/
+.container, .containers{
+    background: rgb(75, 72, 72);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+}
+
+.nav, #input {
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 1px );
+}
+
+#inputs, .container button {
+    
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 1px );
+    border: 1px rgba(250, 244, 244, 0.15) solid;
+    outline: none;
+}
+.nav, .form_container {
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 1px );
+   
+}
+.form_container {
+    background: rgba(151, 149, 149, 0.15);
+    
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 11px );
+   
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
